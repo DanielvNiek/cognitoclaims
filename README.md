@@ -16,7 +16,7 @@ This package used the cognitojwt repo as a starting point and much of the code b
 In this case set the 'COGNITO_PUBLIC_KEYS' environment variable to the list of public keys that can be found at 'https://cognito-idp.{region}.amazonaws.com/{userpool_id}/.well-known/jwks.json'. Public keys should not change for the same user pool, but this is up to AWS's discresion, so hardcoding the keys might cause unintended verification failures.
 
 ## Installation
-pip install cognitoclaims
+pip install git+https://github.com/DanielvNiek/cognitoclaims.git
 
 ## Usage
 ```python
